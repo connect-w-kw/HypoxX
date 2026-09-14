@@ -45,6 +45,39 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// Navigation //
+document.addEventListener('DOMContentLoaded', () => {
+    const sidebarButtons = document.querySelectorAll('.nav-item[data-target]');
+    const viewPanels = document.querySelectorAll('.view-pane');
+    const allNavTriggers = document.querySelectorAll('[data-target]');
+
+    function navigateTo(targetId) {
+        viewPanels.forEach(pane => pane.classList.remove('active'));
+        const targetPane = document.getElementById(targetId);
+        if (targetPane) {
+            targetPane.classList.add('active');
+        }
+
+        sidebarButtons.forEach(btn => {
+            if (btn.getAttribute('data-target') === targetId) {
+                btn.classList.add('active');
+                btn.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            } else {
+                btn.classList.remove('active');
+            }
+        });
+
+        allNavTriggers.forEach(element => {
+            element.addEventListener('click', () => {
+                const targetId = element.getAttribute('data-target');
+                if (targetId) {
+                    navigateTo(targetId);
+                }
+            });
+        });
+    }
+});
+
 // Year //
 const currentYear = new Date().getFullYear();
 

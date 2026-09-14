@@ -179,11 +179,10 @@
     <section id="dashboard-view" class="view-panel">
         <div class="dashboard-layout">
             <aside class="sidebar">
-                <h2 class="brand-name">HypoxX</h2>
                 <div class="user-card">
-                    <div class="avatar">HB</div>
+                    <div class="avatar">JC</div>
                     <div class="user-details">
-                        <span class="user-name">User</span>
+                        <span class="user-name">James Clear</span>
                         <span class="badge">0 XP</span>
                     </div>
                 </div>
@@ -191,24 +190,24 @@
                 <div class="nav-group">
                     <p class="nav-label">Life Areas</p>
                     <a href="#general" class="nav-item active" data-target="view-dashboard">
-                        <span class="">-</span> General
+                        <span class=""></span> General
                     </a>
-                    <a href="#personal" class="nav-item" data-target="view-personal">-</span> Personal</a>
-                    <a href="#work" class="nav-item" data-target="view-work">-</span> Work</a>
-                    <a href="#education" class="nav-item" data-target="view-education">-</span> Education</a>
-                    <a href="#family" class="nav-item" data-target="view-family">-</span> Family</a>
-                    <a href="#social" class="nav-item" data-target="view-social">-</span> Social</a>
+                    <a href="#personal" class="nav-item" data-target="view-personal">🟪</span> Personal</a>
+                    <a href="#work" class="nav-item" data-target="view-work">🟦</span> Work</a>
+                    <a href="#education" class="nav-item" data-target="view-education">🟨</span> Education</a>
+                    <a href="#family" class="nav-item" data-target="view-family">🟩</span> Family</a>
+                    <a href="#social" class="nav-item" data-target="view-social">🟥</span> Social</a>
                 </div>
                 <div class="nav-group">
                     <p class="nav-label">Tools</p>
-                    <a href="#bucketlist" class="nav-item"><span class="">-</span> Bucket List</a>
-                    <a href="#goals" class="nav-item"><span class="">-</span> Goals</a>
-                    <a href="#calendar" class="nav-item"><span class="">-</span> Calendar</a>
-                    <a href="#tasks" class="nav-item"><span class="">-</span> Tasks</a>
-                    <a href="#habits" class="nav-item"><span class="">-</span> Habits</a>
-                    <a href="#productivity" class="nav-item"><span class="">-</span> Productivity</a>
-                    <a href="#achievements" class="nav-item"><span class="">-</span> Achievements</a>
-                    <a href="#hypoxxai" class="nav-item"><span class="">-</span> HypoxX AI</a>
+                    <a href="#bucketlist" class="nav-item" data-target="view-bucket-list"><span class="">-</span> Bucket List</a>
+                    <a href="#goals" class="nav-item" data-target="view-goals"><span class="">-</span> Goals</a>
+                    <a href="#calendar" class="nav-item" data-target="view-calendar"><span class="">-</span> Calendar</a>
+                    <a href="#tasks" class="nav-item" data-target="view-tasks"><span class="">-</span> Tasks</a>
+                    <a href="#habits" class="nav-item" data-target="view-habits"><span class="">-</span> Habits</a>
+                    <a href="#productivity" class="nav-item" data-target="view-productivity"><span class="">-</span> Productivity</a>
+                    <a href="#achievements" class="nav-item" data-target="view-achievements"><span class="">-</span> Achievements</a>
+                    <a href="#hypoxxai" class="nav-item" data-target="view-hypoxx-ai"><span class="">-</span> HypoxX AI</a>
                 </div>
                 <div class="nav-group">
                     <p class="nav-label">Settings</p>
@@ -254,7 +253,7 @@
                             </div>
                         </div>
                         <div class="grid-summary">
-                            <div class="card summary-card">
+                            <div class="card summary-card tint-purple nav-trigger-card" data-target="view-tasks">
                                 <div class="card-title">
                                     <h3>Pending Tasks</h3>
                                     <span>📋</span>
@@ -262,7 +261,7 @@
                                 <div class="stat-highlight purple-text">0</div>
                                 <p class="sub-text">tasks left today.</p>
                             </div>
-                            <div class="card summary-card">
+                            <div class="card summary-card tint-amber nav-trigger-card" data-target="view-habits">
                                 <div class="card-title">
                                     <h3>Habits</h3>
                                     <span>🔥</span>
@@ -270,7 +269,7 @@
                                 <div class="stat-highlight orange-text">0<span class="mute">/0</span></div>
                                 <p class="sub-text">habits checked in.</p>
                             </div>
-                            <div class="card summary-card">
+                            <div class="card summary-card tint-blue nav-trigger-card" data-target="view-goals">
                                 <div class="card-title">
                                     <h3>Goals</h3>
                                     <span>🎯</span>
@@ -278,6 +277,26 @@
                                 <div class="stat-highlight purple-text">0</div>
                                 <p class="sub-text">goals in progress.</p>
                             </div>
+                        </div>
+                    </div>
+                    <div class="quick-access">
+                        <h2 class="section-title">Quick Access</h2>
+
+                        <div class="quick-access-grid">
+                            <button class="quick-card" data-target="view-goals">
+                                <div class="icon-circle bg-purple">🎯</div>
+                                <span>Goals</span>
+                            </button>
+
+                            <button class="quick-card" data-target="view-tasks">
+                                <div class="icon-circle bg-fuchsia">📋</div>
+                                <span>Tasks</span>
+                            </button>
+
+                            <button class="quick-card" data-target="view-habits">
+                                <div class="icon-circle bg-orange">🔥</div>
+                                <span>Habits</span>
+                            </button>
                         </div>
                     </div>
                 </section>

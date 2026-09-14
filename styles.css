@@ -385,14 +385,7 @@ a {
 
 /* Elements */
 /* Brand */
-.brand-name {
-    display: flex;
-    align-items: center;
-    color: #7b2cbf;
-    font-size: 20px;
-    font-weight: 700;
-    gap: 8px;
-}
+
 
 /* Logo */
 .logo {
@@ -568,6 +561,49 @@ a {
 .gdcard-1 {
     color: white;
     background: linear-gradient(90deg, #8800ff, #a754ef);
+}
+
+/* Summary Card */
+.summary-card.tint-purple {
+    background: #faf5ff;
+    border-color: #f3e8ff;
+}
+
+.summary-card.tint-purple.nav-trigger-card:hover {
+    border-color: #d8b4fe;
+    box-shadow: 0 10px 24px -4px rgba(124, 58, 237, 0.12);
+}
+
+.summary-card.tint-amber {
+    background: #fffbeb;
+    border-color: #fef3c7;
+}
+
+.summary-card.tint-amber.nav-trigger-card:hover {
+    border-color: #fde68a;
+    box-shadow: 0 10px 24px -4px rgba(234, 88, 12, 0.12);
+}
+
+.summary-card.tint-blue {
+    background: #faf5ff;
+    border-color: #ede9fe;
+}
+
+.summary-card.tint-blue.nav-trigger-card:hover {
+    border-color: #ddd6fe;
+    box-shadow: 0 10px 24px -4px rgba(79, 70, 299, 0.12);
+}
+
+/* Navigation Card */
+.nav-trigger-card {
+    user-select: none;
+    cursor: pointer;
+    transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease;
+}
+
+.nav-trigger-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px -5px rgba(15, 25, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
 }
 
 /* Eyebrow */

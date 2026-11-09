@@ -186,6 +186,33 @@ document.addEventListener('DOMContentLoaded', () => {
     renderCalendar();
 });
 
+// Focus //
+document.addEventListener('DOMContentLoaded', () => {
+    const focusTabButtons = document.querySelectorAll('.focus-tab-btn');
+    const focusSubviews = document.querySelectorAll('.focus-subview');
+
+    focusTabButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const targetId = btn.getAttribute('data-focustab');
+            const targetView = document.getElementById(targetId);
+
+            console.log('Target ID:', targetId, '| Found element:', targetView);
+
+            if (targetView) {
+                focusTabButtons.forEach(b => b.classList.remove('active'));
+                focusSubviews.forEach(v => v.classList.remove('active'));
+
+                btn.classList.add('active');
+                targetView.classList.add('active');
+            } else {
+                console.error(`Could not find a subview container with id="${targetId}`);
+            }
+        });
+    });
+});
+
+
+
 // Year //
 const currentYear = new Date().getFullYear();
 

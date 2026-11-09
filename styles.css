@@ -482,6 +482,108 @@ mode-pill.active[data-label="Long Break"] {
     border-radius: 24px;
 }
 
+.pomo-digits {
+    line-height: 1;
+    color: #0f172a;
+    font-size: 72px;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+}
+
+.pomo-status {
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 10px 0 32px;
+}
+
+.focus-side-col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.focus-side-card {
+    padding: 20px 22px;
+}
+
+.side-stat-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #64748b;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.focus-task-input {
+    width: 100%;
+    max-width: 440px;
+    text-align: center;
+    font-size: 13px;
+    padding: 12px 20px;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 999px;
+    margin-bottom: 24px;
+}
+
+.btn-pomo-start {
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 14px 44px;
+    background: linear-gradient(90deg, #6366f1, #4f46e5);
+    border: none;
+    border-radius: 999px;
+    box-shadow: 0 6px 18px rgba(79, 70, 299, 0.35);
+}
+
+.analytics-stat-card {
+    text-align: center;
+    padding: 24px;
+}
+
+.analytics-stat-card h2 {
+    color: #0f172a;
+    font-size: 26px;
+    font-weight: 800;
+    margin: 10px 0 4px;
+}
+
+.chart-card {
+    padding: 24px 28px;
+}
+
+.chart-wrapper {
+    display: flex;
+    height: 180px;
+    gap: 16px;
+}
+
+.chart-y-axis {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #94a3b8;
+    font-size: 11px;
+}
+
+.chart-plot-area {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.baseline-line {
+    width: 100%;
+    height: 2px;
+    background: #818cf8;
+    margin-bottom: 8px;
+}
+
 /* Footer */
 .footer {
     text-align: center;

@@ -515,7 +515,7 @@
                     </header>
                     <div class="focus-tab-switcher">
                         <button class="focus-tab-btn active" data-focustab="tab-timer">Timer</button>
-                        <button class="focus-tab-btn" data-focus="tab-analytics">Analytics</button>
+                        <button class="focus-tab-btn" data-focustab="tab-analytics">Analytics</button>
                     </div>
                     <div id="tab-timer" class="focus-subview active">
                         <div class="timer-mode-pills">
@@ -525,24 +525,26 @@
                             <button class="mode-pill" data-time="900" data-label="Long Break">Long Break</button>
                         </div>
                         <div class="focus-layout-grid">
-                            <div class="pomo-dots">
-                                <span class="pomo-dot"></span>
-                                <span class="pomo-dot"></span>
-                                <span class="pomo-dot"></span>
-                                <span class="pomo-dot"></span>
-                            </div>
+                            <div class="focus-main-card">
+                                <div class="pomo-dots">
+                                    <span class="pomo-dot"></span>
+                                    <span class="pomo-dot"></span>
+                                    <span class="pomo-dot"></span>
+                                    <span class="pomo-dot"></span>
+                                </div>
 
-                            <h1 id="pomo-timer-display" class="pomo-digits">25:00</h1>
-                            <p class="pomo-status" id="pomo-status-label">Ready</p>
+                                <h1 id="pomo-timer-display" class="pomo-digits">25:00</h1>
+                                <p class="pomo-status" id="pomo-status-label">Ready</p>
 
-                            <input type="text" id="focus-task-input" class="focus-tasl-input" placeholder="What are you working on?"/>
+                                <input type="text" id="focus-task-input" class="focus-tasl-input" placeholder="What are you working on?"/>
 
-                            <div class="focus-action-btn-row">
-                                <button id="pomo-start-btn" class="btn-pomo-start">Start</button>
-                            </div>
+                                <div class="focus-action-btn-row">
+                                    <button id="pomo-start-btn" class="btn-pomo-start">Start</button>
+                                </div>
 
-                            <div class="timer-settings-link">
-                                <button type="button" class="text-link-btn">Settings</button>
+                                <div class="timer-settings-link">
+                                    <button type="button" class="text-link-btn">Settings</button>
+                                </div>    
                             </div>
 
                             <aside class="focus-side-col">
@@ -565,8 +567,9 @@
                             </aside>
                         </div>
                     </div>
+
                     <div id="tab-analytics" class="focus-subview">
-                        <div class="analytics-stat-grid">
+                        <div class="grid-3">
                             <div class="card analytics-stat-card">
                                 <span class="icon-subtle">-</span>
                                 <h2>0h 0m</h2>
